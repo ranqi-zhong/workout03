@@ -1,0 +1,18 @@
+Package: binomial
+Type: Package
+Title: Binomial
+Version: 0.1.0
+Author: Ranqi Zhong
+Maintainer: The package maintainer <yourself@somewhere.net>
+Description: This package is to implement functions for calculating probabilities of a Binomial random variable, and related calculations such as the probability distribution, the expected value, variance, etc.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Collate: 
+    binomial.R
+RoxygenNote: 6.1.1
+Suggests: 
+    knitr, 
+    rmarkdown, 
+    testthat
+VignetteBuilder: knitr

@@ -1,0 +1,7 @@
+"0","summary(bin_variable(trials = 10, p = 0.3))
+"
+"1","summary ""binomial""
+
+"
+"2","Error in print(x$sl) : object 'x' not found
+"

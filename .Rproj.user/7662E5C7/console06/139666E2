@@ -1,0 +1,38 @@
+[0mMicrosoft Windows [版本 10.0.17134.706][0K[?25l
+(c) 2018 Microsoft Corporation。保留所有权利。[0K
+[0K
+C:\Users\dell\Desktop\workout03\binomial>[0K[?25hpwd[0K[?25l
+[0K[?25h'pwd' 不是内部或外部命令，也不是可运行的程序[0K[?25l
+或批处理文件。[0K
+[0K
+C:\Users\dell\Desktop\workout03\binomial>[0K[?25hc[0Kd[0K[?25l
+C:\Users\dell\Desktop\workout03\binomial[0K
+[0K
+C:\Users\dell\Desktop\workout03\binomial>[0K[?25hg[0Ki[0Kt[0K[46G[?25lC:\Users\dell\Desktop\workout03\binomial>git i[0K[?25hn[0Ki[0Kt[0K[?25l
+[0K[?25h]0;  - git  initInitialized empty Git repository in C:/Users/dell/Desktop/workout03/binomial/.git/[0K[?25l
+[0K[?25h]0; [?25l
+C:\Users\dell\Desktop\workout03\binomial>[0K[?25hg[0Ki[0Kt[0K[46G[?25lC:\Users\dell\Desktop\workout03\binomial>git s[0K[?25ht[0Ka[0Kt[0Ku[0Ks[0K]0;  - git  status[?25l
+[0K[?25hOn branch master[0K[?25l
+[0K
+No commits yet[0K
+[0K
+Untracked files:[0K
+  (use "git add <file>..." to include in what will be committed)[0K
+[0K
+        [0;31m.RData[0m[0K
+        [0;31m.Rbuildignore[0m[0K
+        [0;31m.Rhistory[0m[0K
+        [0;31m.Rproj.user/[0m[0K
+        [0;31m.gitignore[0m[0K
+        [0;31mDESCRIPTION[0m[0K
+        [0;31mNAMESPACE[0m[0K
+        [0;31mR/[0m[0K
+        [0;31mbinomial.Rproj[0m[0K
+        [0;31mdevtools-flow.R[0m[0K
+        [0;31mman/[0m[0K
+        [0;31mtests/[0m[0K
+        [0;31mvignettes/[0m[0K
+[0K
+nothing added to commit but untracked files present (use "git add" to track)[0K
+[0K[?25h]0; [?25l
+C:\Users\dell\Desktop\workout03\binomial>[0K[?25hg[0Ki[0Kt[0K[46G[?25lC:\Users\dell\Desktop\workout03\binomial>git a[0K[?25hd[0Kd[0K[50G[?25lC:\Users\dell\Desktop\workout03\binomial>git add .[0K[?25h

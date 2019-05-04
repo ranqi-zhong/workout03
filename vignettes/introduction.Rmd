@@ -1,0 +1,120 @@
+---
+title: "Getting Started with binomial"
+author: "Ranqi Zhong"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to binomial}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+
+```{r, echo = FALSE, message = FALSE}
+
+knitr::opts_chunk$set(collapse = T, comment = "#>")
+
+library(binomial)
+
+```
+
+
+1.3) Function bin_choose()
+Use factorial() to write a main function bin_choose() that calculates the number of
+combinations in which k successes can occur in n trials.
+```{r}
+bin_choose(n = 5, k = 2)
+bin_choose(5, 0)
+bin_choose(5, 1:3)
+```
+
+1.4) Function bin_probability()
+Use bin_choose() to create a main function bin_probability().
+bin_probability() should take three arguments: success, trials, and prob.
+Use check_trials() to check that trials is valid
+Use check_prob() to check that prob is valid
+Use check_success() to check that success is valid
+```{r}
+bin_probability(success = 2, trials = 5, prob = 0.5)
+bin_probability(success = 0:2, trials = 5, prob = 0.5)
+bin_probability(success = 55, trials = 100, prob = 0.45)
+```
+
+1.5) Function bin_distribution()
+Use bin_probability() to create a main function bin_distribution().
+There are two arguments trials, and prob.
+The returned output should be a data.frame with two classes: c("bindis",
+"data.frame")
+```{r}
+bin_distribution(trials = 5, prob = 0.5)
+```
+
+Function plot.bindis()
+There is a plotting method (i.e. a function) plot.bindis() that graphs a barplot to display
+the probability histogram of a binomial distribution object "bindis".
+```{r}
+plot(bin_distribution(trials = 5, prob = 0.5))
+```
+
+1.6) Function bin_cumulative()
+Use bin_cumulative() to create a main function bin_cumulative().
+This function should have two arguments trials, and prob.
+The returned output should be a data.frame with two classes: c("bincum",
+"data.frame")
+This function should return a data frame with both the probability distribution and the
+cumulative probabilities: sucesses in the first column, probability in the second column,
+and cumulative in the third column.
+
+```{r}
+bin_cumulative(trials = 5, prob = 0.5)
+```
+```{r}
+plot(bin_cumulative(trials = 5, prob = 0.5))
+```
+
+Function plot.bi() Function bin_variable()
+Another function to include in your "binomial" package is bin_variable().
+This is a main function that takes two arguments: trials and prob
+This function should return an object of class "binvar", that is, a binomial random
+variable object.
+This function should invoke check_trials() and check_prob()
+The returned object should be a list with named elements:
+  trials: number of trials
+  prob: probability of success
+
+```{r}
+bin1 <- bin_variable(trials = 10, prob = 0.3)
+bin1
+```
+
+Methods summary.binvar() and print.summary.binvar()
+To get a full summary description of an object "binvar",it is needed to create a function
+summary.binvar().
+This function takes an object of class "binvar"
+The returned output is a list of class "summary.binvar" containing named elements:
+  trials: number of trials
+  prob: probability of success
+  mean: mean or expected value
+  variance: variance
+  mode: mode
+  skewness: skewness
+  kurtosis: kurtosis
+```{r}
+summary(bin_variable(trials = 10, p = 0.3))
+```
+
+1.8) Functions of measures
+Finally, "binomial" package should also contain main functions for each of the summary
+measures: e.g. bin_mean(), bin_variance(), etc.
+These are main functions that take two arguments: trials and prob
+Use check_trials() to check that trials is valid
+Use check_prob() to check that prob is valid
+Invoke your auxiliary functions to do the corresponding calculation. For instance:
+aux_mean() gets called by bin_mean().
+```{r}
+bin_mean(10, 0.3)
+bin_variance(10, 0.3)
+bin_mode(10, 0.3)
+bin_skewness(10, 0.3)
+bin_kurtosis(10, 0.3)
+```

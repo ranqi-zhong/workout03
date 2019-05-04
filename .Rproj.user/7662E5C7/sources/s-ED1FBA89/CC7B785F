@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556741571440.000,
+    "dirty" : false,
+    "encoding" : "CP936",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "CC7B785F",
+    "lastKnownWriteTime" : 1556815917,
+    "last_content_update" : 1556815917892,
+    "path" : "C:/Users/dell/Desktop/workout03/binomial/tests/testthat/test-binomial-checkers.R",
+    "project_path" : "tests/testthat/test-binomial-checkers.R",
+    "properties" : {
+        "cursorPosition" : "13,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
